@@ -6,7 +6,8 @@ the project contains two independent modules:
 2. the second streamfilterservice module takes care of ingesting in real time the data introduced in the first module and creates four output topics .
 <br>
 <br>
-![mon image](images/gr1.png)
+
+[//]: # (![mon image]&#40;images/gr1.png&#41;)
 ## needed tools:
 1. Docker (and docker-compose)
 2. Java
