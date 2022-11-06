@@ -7,7 +7,7 @@ the project contains two independent modules:
 <br>
 <br>
 
-[//]: # (![mon image]&#40;images/gr1.png&#41;)
+![garphe1](images/gr1.png)
 ## needed tools:
 1. Docker (and docker-compose)
 2. Java
@@ -23,7 +23,7 @@ build services:zookeeper kafka brocker :
    in postmen: copy past, post method, url: http://localhost:8080/post, send.
 <br>
 <br>
-![mon image](images/gr2.png)
+![garphe2](images/gr2.png)
 
 ## results:
 *  the input topic is created and fed (module kafkaProducerService). <br>
