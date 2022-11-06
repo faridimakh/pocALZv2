@@ -1,4 +1,4 @@
-# kafka-elastic-spark
+# pocALZ
 
 ## discription :
 the project contains two independent modules:
