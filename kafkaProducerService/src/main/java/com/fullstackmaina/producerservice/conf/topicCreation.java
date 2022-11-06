@@ -10,7 +10,7 @@ public class topicCreation {
 
     @Bean
     public NewTopic topicuser() {
-        return TopicBuilder.name("user")
+        return TopicBuilder.name("db-topic")
                 .partitions(3)
                 .build();
     }

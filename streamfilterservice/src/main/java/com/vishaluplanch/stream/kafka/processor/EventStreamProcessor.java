@@ -28,7 +28,7 @@ public class EventStreamProcessor {
         Predicate<String, WikiChange> ne_w = (s, wikiChange) -> wikiChange.getType().equalsIgnoreCase("new");
         Predicate<String, WikiChange> categorize = (s, wikiChange) -> wikiChange.getType().equalsIgnoreCase("categorize");
         Serde<WikiChange> orderSerde = new ordderserdes();
-        KStream<String, WikiChange> kStream = streamsBuilder.stream("user", Consumed.with(Serdes.String(), orderSerde));
+        KStream<String, WikiChange> kStream = streamsBuilder.stream("db-topic", Consumed.with(Serdes.String(), orderSerde));
         KStream<String, WikiChange>[] kk = kStream.branch(edit, log, ne_w, categorize);
         kk[0].to("wikichangesresponses-edit", Produced.with(Serdes.String(), orderSerde));
         kk[1].to("wikichangesresponses-log", Produced.with(Serdes.String(), orderSerde));

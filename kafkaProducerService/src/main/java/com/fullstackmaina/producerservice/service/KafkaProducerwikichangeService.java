@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Log4j2
 public class KafkaProducerwikichangeService {
 
-    private static final String TOPIC = "user";
+    private static final String TOPIC = "db-topic";
 
     @Autowired
     private KafkaTemplate<String, WikiChange> kafkaTemplate;
